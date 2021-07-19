@@ -2,7 +2,7 @@
 
 from numpy import *
 from os import path
-home = path.expanduser("/Users/jinjoo/Desktop")
+home = path.expanduser("/Users/Desktop")
 
 import matplotlib.pyplot as plt
 
