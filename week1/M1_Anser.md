@@ -26,9 +26,10 @@
 #### 3. 그리고 그 밖에 다른 Error도 3가지를 찾아 그 Error를 발생시키는 코드와
 #### 4. Debugging한 코드를 1가지씩 만들어 봅시다.
 #
-The reference code is in [HERE][https://github.com/JinjooSeo/PY4E/blob/main/week1/example/hydro_evo-TestRun.py]
+The reference code is in [HERE][link1]
+[link1] : https://github.com/JinjooSeo/PY4E/blob/main/week1/example/hydro_evo-TestRun.py
 
-+ 1. 
++ 1. Error
     + SyntaxError
      ```Python
      from os import path
@@ -53,7 +54,7 @@ The reference code is in [HERE][https://github.com/JinjooSeo/PY4E/blob/main/week
      print("working path : "+working_path+" workind date : "+20210719) #can only concatenate str (not "int") to str
      ```
 
-+ 2.
++ 2. Debugging
     + SyntaxError
      ```Python
      from os import path
@@ -78,7 +79,7 @@ The reference code is in [HERE][https://github.com/JinjooSeo/PY4E/blob/main/week
      print("working path : "+working_path+" workind date : "+"20210719") #change the type to string from int
      ```
 
-+ 3. 
++ 3. Error
     + OSError
      ```Python
      from os import path
@@ -99,7 +100,7 @@ The reference code is in [HERE][https://github.com/JinjooSeo/PY4E/blob/main/week
      import matplotlib.pyplots as plt #No module named matplotlib.pyplots
      ```
 
-+ 4. 
++ 4. Debugging
     + OSError
      ``` Python
      from os import path
@@ -128,7 +129,8 @@ The reference code is in [HERE][https://github.com/JinjooSeo/PY4E/blob/main/week
 
      birth = int(input(“생일이 지났습니까? 맞으면 0 아니면 -1 : “))
 #
-The macro is in [HERE][https://github.com/JinjooSeo/PY4E/blob/main/week1/M1_A4.py]
+The macro is in [HERE][link2]
+[link2] : https://github.com/JinjooSeo/PY4E/blob/main/week1/M1_A4.py
 ```Python
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
