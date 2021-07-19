@@ -26,11 +26,11 @@
 #### 3. 그리고 그 밖에 다른 Error도 3가지를 찾아 그 Error를 발생시키는 코드와
 #### 4. Debugging한 코드를 1가지씩 만들어 봅시다.
 #
-The reference code is in "JinjooSeo/PY4E/week1/example"
+The reference code is in [HERE][https://github.com/JinjooSeo/PY4E/blob/main/week1/example/hydro_evo-TestRun.py]
 
 + 1. 
     + SyntaxError
-     ```C
+     ```Python
      from os import path
      home = path.expanduser("Desktop")
      working_path = path.join(home, "study/PY4E/week1/example")
@@ -38,7 +38,7 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
      ```
 
     + ValueError
-     ```C
+     ```Python
      from os import path
      home = path.expanduser("Desktop")
      working_path = path.join(home, "study/PY4E/week1") 
@@ -46,7 +46,7 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
      ```
     
     + TypeError
-     ```C
+     ```Python
      from os import path
      home = path.expanduser("Desktop")
      working_path = path.join(home, "study/PY4E/week1/example")
@@ -55,7 +55,7 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
 
 + 2.
     + SyntaxError
-     ```C
+     ```Python
      from os import path
      home = path.expanduser("Desktop")
      working_path = path.join(home, "study/PY4E/week1/example")
@@ -63,7 +63,7 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
      ```
 
     + ValueError
-     ```C
+     ```Python
      from os import path
      home = path.expanduser("Desktop")
      working_path = path.join(home, "study/PY4E/week1") 
@@ -71,7 +71,7 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
      ```
     
     + TypeError
-     ```C
+     ```Python
      from os import path
      home = path.expanduser("Desktop")
      working_path = path.join(home, "study/PY4E/week1/example")
@@ -80,7 +80,7 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
 
 + 3. 
     + OSError
-     ```C
+     ```Python
      from os import path
      home = path.expanduser("Desktop")
      working_path = path.join(home, "study/PY4E/week1") #Cannot find the data since the path is uncorrect
@@ -88,20 +88,20 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
      ```
 
     + NameError
-     ```C
+     ```Python
      import matplotlib as mpl
      mpl.rcParams['figure.figsize'] = [6., 4.5]
      mpl.rcParams['lines.linewidth'] = linewidth # name 'linewidth' is not defined
     ```
     
     + ModuleNotFoundError
-     ```C
+     ```Python
      import matplotlib.pyplots as plt #No module named matplotlib.pyplots
      ```
 
 + 4. 
     + OSError
-     ``` C
+     ``` Python
      from os import path
      home = path.expanduser("Desktop")
      working_path = path.join(home, "study/PY4E/week1/example") #modify the path
@@ -109,7 +109,7 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
      ```
 
     + NameError
-     ``` C
+     ``` Python
      import matplotlib as mpl
      linewidth = 2 #Define linewidth
      mpl.rcParams['figure.figsize'] = [6., 4.5]
@@ -117,7 +117,7 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
     ```
     
     + ModuleNotFoundError
-     ```C
+     ```Python
      import matplotlib.pyplot as plt #Fix typo in module name
      ```
 
@@ -128,8 +128,8 @@ The reference code is in "JinjooSeo/PY4E/week1/example"
 
      birth = int(input(“생일이 지났습니까? 맞으면 0 아니면 -1 : “))
 #
-The macro is in "JinjooSeo/PY4E/week1/M1_A4.py"
-```C
+The macro is in [HERE][https://github.com/JinjooSeo/PY4E/blob/main/week1/M1_A4.py]
+```Python
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
