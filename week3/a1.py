@@ -1,9 +1,9 @@
-def checkInput(number) :
+def checkInput(number) : #check validity
     try :
         inumber = int(number)
     except :
         print("Invaild input! Please check it")
-    return inumber
+    return inumber #return int 
 
 def calMult(number) :
     if number > 50 :
@@ -20,5 +20,6 @@ def calMult(number) :
         result = number * a
         i=i+1
 
+#---main---
 number = input("Which order do you want to calculate the multiplication table? ")
 calMult(checkInput(number))
