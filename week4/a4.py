@@ -14,17 +14,22 @@ def check_id(number) :
         gender = str(number[7:8])
         s_gender = "None"
 
-        #Check validity
-        if gender in ["1","3"] :
-            s_gender = "Man"
-        elif gender in ["2","4"] :
-            s_gender = "Woman"
-        else :
-            print("Invaild input! Please check the gender number.")
-            runProcess()
+        flag=check_year(year,gender) #check year
+        
+        if flag != False :
+            #Check validity
+            if gender in ["1","3"] :
+                s_gender = "Man"
+            elif gender in ["2","4"] :
+                s_gender = "Woman"
+            else :
+                print("Invaild input! Please check the gender number.")
+                return runProcess()
             
-        check_year(year,gender) #check year
-        return year, month, day, s_gender
+            return year, month, day, s_gender
+        else :
+            exit()
+            
 
 def check_year(year,gender) :
     if(int(year) <=21 & int(year) >=0) :
@@ -32,14 +37,18 @@ def check_year(year,gender) :
         if q == "o" : #born in 2000 ~ 2021
             if gender not in ["3","4"] :
                 print("Check the input! born year or gender number")
-                return runProcess()
+                return False
         elif q == "x" : #born in 1900 ~ 1921
             if gender not in ["1","2"] :
                 print("Check the input! born year or gender number")
-                return runProcess()
+                return False
         else :
             print("Check the response! (o or x)")
             check_year(year,gender)
+    else :
+       if gender not in ["1","2"] :
+                print("Check the input! born year or gender number")
+                return False
 
 def runProcess() :
     number = input("Enter your resident registration number : ")
@@ -47,4 +56,4 @@ def runProcess() :
     
 #---main---
 year,month,day,gender = runProcess()
-print(f"Bitrh : {year}.{month}.{day} Gender : {gender}")
+print(f"Bitrh : {year}.{month}.{day}, Gender : {gender}")
