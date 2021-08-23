@@ -1,7 +1,6 @@
 import numpy
 
 def sales_management(names, records):
-    
     record_dict = dict() # dictionary for record
     for i in range(len(names)):
         record_dict[names[i]] = numpy.mean(records[i]) #calcuate the mean of scores
@@ -27,8 +26,7 @@ member_names=[]
 member_records=[]
 with open('data.csv', 'r') as f:
     for line in f:
-        member_names.append(line.strip('\n').split(',')[0])
-        member_records.append(list(map(int,line.strip('\n').split(',')[1:])))
-    data = f.read()
+        member_names.append(line.strip('\n').split(',')[0]) #sort name
+        member_records.append(list(map(int,line.strip('\n').split(',')[1:]))) #sort records as tpye of list
 
 sales_management(member_names,member_records)
